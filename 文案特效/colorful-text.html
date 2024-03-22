@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="h-full">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <style>
+    .text-animation {
+      background: linear-gradient(-45deg,
+          #ee7752,
+          #e73c7e,
+          #23a6d5,
+          #23d5ab);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-size: 400% 400%;
+      animation: gradient 2.5s ease infinite alternate;
+    }
+
+    @keyframes gradient {
+      from {
+        background-position: 0% 50%;
+      }
+
+      to {
+        background-position: 100% 50%;
+      }
+    }
+  </style>
+</head>
+
+<body class="h-full bg-[#111827] flex items-center justify-center">
+  <div class="text-animation text-8xl font-extrabold">CSS</div>
+</body>
+
+</html>
